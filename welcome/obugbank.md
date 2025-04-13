@@ -49,4 +49,4 @@ Além dos campos obrigatórios, o “cliente” pode inserir:
 ###
 ###
 
-Vá para a [Execução e Relatórios](.welcome/execute.md) para configurar o projeto de testes.
+Vá para a [Execução e Relatórios](execute.md) para configurar o projeto de testes.

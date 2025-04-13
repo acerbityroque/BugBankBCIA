@@ -19,25 +19,21 @@ Relatório de testes apresentado ao Bootcamp de Quality Assurance do Instituto A
 
 
 ```diff 
-• git clone git@github.com:Allysr/BugBankCypressPOM.git
-• cd bugbankCypressPOM
+• git clone git@github.com:acerbityroque/BugBankBCIA.git
+• cd BugBankBCIA
 • npm install
 • npm run test
+
 ```
-
-#### 🦆 Como rodar o relatório:
-
+#### 🦆 Faça um commit! 
 ```diff 
-• npm run test
-• npm run report:allure
-
+git add .
+git commit -m "Teste dos professores"
+git push origin main
 ```
 
 #### 🦆 Cenários de login usados para realização dos testes no cypress:
-
-
 ```diff  
-
 • Validar login bem-sucedido.
 Dado que o usuário tenha cadastro
 E insira os dados válidos
