@@ -1,5 +1,5 @@
 import { ValidationRule } from '../types';
-declare const _default: (validationData?: ValidationRule<import("../types").ValidationValue> | undefined) => {
+declare const _default: (validationData?: ValidationRule) => {
     value: string | number | boolean | RegExp | undefined;
     message: string;
 };

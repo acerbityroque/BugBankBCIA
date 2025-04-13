@@ -2,7 +2,6 @@ import {
   FieldValues,
   ResolverOptions,
   ResolverResult,
-  UnpackNestedValue,
 } from 'react-hook-form';
 import * as Yup from 'yup';
 import type Lazy from 'yup/lib/Lazy';
@@ -14,9 +13,9 @@ type Options<T extends Yup.AnyObjectSchema | Lazy<any>> = Parameters<
 export type Resolver = <T extends Yup.AnyObjectSchema | Lazy<any>>(
   schema: T,
   schemaOptions?: Options<T>,
-  factoryOptions?: { mode?: 'async' | 'sync' },
+  factoryOptions?: { mode?: 'async' | 'sync', rawValues?: boolean; },
 ) => <TFieldValues extends FieldValues, TContext>(
-  values: UnpackNestedValue<TFieldValues>,
+  values: TFieldValues,
   context: TContext | undefined,
   options: ResolverOptions<TFieldValues>,
 ) => Promise<ResolverResult<TFieldValues>>;

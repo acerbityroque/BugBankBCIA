@@ -1,4 +1,4 @@
-import Yup from 'yup';
+import * as Yup from 'yup';
 import { toNestError, validateFieldsNatively } from '@hookform/resolvers';
 import { appendErrors, FieldError } from 'react-hook-form';
 import { Resolver } from './types';
@@ -59,7 +59,7 @@ export const yupResolver: Resolver =
       options.shouldUseNativeValidation && validateFieldsNatively({}, options);
 
       return {
-        values: result,
+        values: resolverOptions.rawValues ? values : result,
         errors: {},
       };
     } catch (e: any) {

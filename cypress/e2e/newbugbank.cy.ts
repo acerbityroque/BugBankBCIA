@@ -18,6 +18,7 @@ it('Registro de novo usuário e login', () => {
     cy.get('.input__default').eq(4).type(credenciais.senha, { force: true, delay: 100 });
     cy.get('.input__default').eq(5).type(credenciais.senha, { force: true, delay: 100 });
     cy.get('button.style__ContainerButton-sc-1wsixal-0.CMabB').click({ force: true });
+    cy.get('#toggleAddBalance').click({ force: true });
 
     // Verificar se o modal de sucesso é exibido e visível
     cy.get('#btnCloseModal').should('be.visible');

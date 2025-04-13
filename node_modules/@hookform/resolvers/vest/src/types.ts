@@ -2,7 +2,6 @@ import {
   FieldValues,
   ResolverOptions,
   ResolverResult,
-  UnpackNestedValue,
 } from 'react-hook-form';
 import * as Vest from 'vest';
 
@@ -11,9 +10,9 @@ export type ICreateResult = ReturnType<typeof Vest.create>;
 export type Resolver = (
   schema: ICreateResult,
   schemaOptions?: never,
-  factoryOptions?: { mode?: 'async' | 'sync' },
+  factoryOptions?: { mode?: 'async' | 'sync', rawValues?: boolean; },
 ) => <TFieldValues extends FieldValues, TContext>(
-  values: UnpackNestedValue<TFieldValues>,
+  values: TFieldValues,
   context: TContext | undefined,
   options: ResolverOptions<TFieldValues>,
 ) => Promise<ResolverResult<TFieldValues>>;
