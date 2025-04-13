@@ -45,5 +45,17 @@
     "jest-styled-components": "^7.0.3",
     "prettier": "2.6.2",
     "typescript": "4.6.3"
-  }
+  },
+  "description": "<img src=\"https://i.imgur.com/yhbiq8n.jpeg\" alt=\"QaQaQAssurance\" style=\"height: 300px; width:100%;\"/>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acerbityroque/BugBankBCIA.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/acerbityroque/BugBankBCIA/issues"
+  },
+  "homepage": "https://github.com/acerbityroque/BugBankBCIA#readme",
+  "keywords": []
 }
