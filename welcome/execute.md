@@ -19,10 +19,10 @@ Relatório de testes apresentado ao Bootcamp de Quality Assurance do Instituto A
 
 
 ```diff 
-git clone git@github.com:acerbityroque/BugBankBCIA.git
+git clone https://github.com/acerbityroque/BugBankBCIA.git
 cd BugBankBCIA
 npm install
-npm run test
+npm run cy:open
 ```
 #### 🦆 Faça um commit! 
 ```diff 
