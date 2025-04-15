@@ -18,4 +18,4 @@ ___
 
 Legal, os pré-requisitos estão prontos. ☑️
 
-Clique [aqui](obugbank.md) que vamos te apresentar sobre a aplicação no qual realizamos nossos testes.
+Clique [aqui](execute.md) que vamos te apresentar sobre a aplicação no qual realizamos nossos testes.
