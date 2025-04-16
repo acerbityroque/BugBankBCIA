@@ -78,12 +78,15 @@ Então deve ocultar a senha.
 
 ```
 
-#### Relatório gerado:
+#### Relatórios gerado:
 
 <div align="center">
-<img width="800px" alt="Relatório gerado Bugbank" src="https://i.imgur.com/YrkjlGl.png" />
+<img width="800px" alt="Relatório gerado Bugbank" src="https://i.imgur.com/rUkjWsc.png" />
 </div>
 
+<div align="center">
+<img width="800px" alt="Relatório gerado Bugbank" src="https://i.imgur.com/xMVcj4V.png" />
+</div>
 
 
 <br>
