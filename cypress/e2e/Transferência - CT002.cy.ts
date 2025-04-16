@@ -1,6 +1,4 @@
-let contaSthefano = ''; // Variável para armazenar o número da conta de Sthefano
-
-it('Fluxo completo de registro, transferência e verificação de extrato sem voltar à página inicial', () => {
+it('Fluxo completo de registro e transferência sem saldo suficiente', () => {
     // Visitar a página inicial
     cy.visit('https://bugbank.netlify.app/');
 
