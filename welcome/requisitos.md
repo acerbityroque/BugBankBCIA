@@ -19,3 +19,11 @@ ___
 Legal, os pré-requisitos estão prontos. ☑️
 
 Clique [aqui](execute.md) que vamos te apresentar sobre a aplicação no qual realizamos nossos testes.
+
+
+Aqui há o índice completo das sessões que compõem esse projeto. Veja abaixo: 
+
+1. [Acolhimento e apresentação](readme.md); 
+2. [Pré-requisitos](welcome/requisitos.md); (Você está aqui!) 
+3. [Sobre a apicação que utilizamos, o Bugbank](welcome/obugbank.md);
+4. [Execução e demais relatórios](welcome/execute.md).

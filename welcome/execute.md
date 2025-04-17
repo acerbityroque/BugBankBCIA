@@ -93,3 +93,11 @@ Então deve ocultar a senha.
 Site utilizado: https://bugbank.netlify.app/#
 <h1>
 
+#
+
+Aqui há o índice completo das sessões que compõem esse projeto. Veja abaixo: 
+
+1. [Acolhimento e apresentação](readme.md); 
+2. [Pré-requisitos](welcome/requisitos.md); 
+3. [Sobre a apicação que utilizamos, o Bugbank](welcome/obugbank.md); 
+4. [Execução e demais relatórios](welcome/execute.md).(Você está aqui!) 
