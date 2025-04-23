@@ -1,53 +1,48 @@
-<img src="https://i.imgur.com/yhbiq8n.jpeg" alt="QaQaQAssurance" style="height: 300px; width:100%;"/>
+![QaQaQAssurance Banner](https://i.imgur.com/UyouAce.png)
 
-<a id="top"></a>
+# 🌲 Bugbank do Zero à Nota Máxima no Bootcamp! 🦆
 
-<h2 align="left"> 🌲 Bugbank do Zero a nota máxima no Bootcamp! 🦆
-</h2>
+👋 **Sejam muito bem-vindos(as), queridos professores!**  
+É uma alegria enorme recebê-los aqui. Preparamos tudo com carinho e dedicação, e temos certeza de que vocês vão se encantar com nossos testes, nosso time… e claro, com o nosso **Patinho Vigilante**! ❤️
 
-👋 Queridos professores, sejam bem-vindos(as)!
+---
 
-É muito bom tê-los(as) aqui. Tenho certeza que vocês ficarão encantandos com os nossos testes, com nosso time e também com o nosso pato! ❤️
+## 🚀 Vamos começar?
 
+Antes de tudo, conheçam os membros da nossa equipe **QaQaQAssurance**:
 
+👩‍💼 **[Vitória Ferreira](https://github.com/viferreira-p)** — QA Lead  
+👨‍💼 **[Pablo Bandeira](https://github.com/acerbityroque)** — QA Manager  
+👨‍💻 **Nathanael Roberto** — QA Analyst *(nathan709@gmail.com)*  
+👩‍💻 **Luciana Valeriana** — QA Analyst *(lucianavaleriana45@gmail.com)*  
+👨‍💻 **Francisco Rômulo** — QA Analyst *(romulo.silva99@gmail.com)*  
+👨‍💼 **[Janielson Anjos](https://github.com/janielson-anjos)** — QA Analyst  
+👩‍💼 **[Alda de Almeida](https://github.com/Aldaalmeida)** — QA Analyst
 
-#
-## Vamos começar?
+---
 
-Primeiramente, vamos apresentar os membros que formam a QaQaQAssurance para vocês. Somos nós:
+## 🧭 Próximo passo
 
-1. [Vitória Ferreira - QA Lead](https://github.com/viferreira-p)
+### ➡️ Está começando agora?
 
-2. [Pablo Bandeira - QA Manager](https://github.com/acerbityroque)
+Comece pela seção de [**Pré-requisitos**](welcome/requisitos.md) para garantir que tudo está pronto para os testes.
 
-3. Nathanael Roberto - QA Analyst (nathan709@gmail.com)
+### 🏃‍♂️ Já tem experiência? Já tá "passado na casca do alho?"
 
-4. Luciana Valeriana - QA Analyst (lucianavaleriana45@gmail.com)
+Pode ir direto para a parte de [**Execução e Relatórios**](welcome/execute.md).
 
-5. Francisco Romulo - QA Analyst (romulo.silva99@gmail.com)
+---
 
-6. [Janielson Anjos - QA Analyst](https://github.com/janielson-anjos)
+## 🗂️ Índice do Projeto
 
-7. [Alda de Almeida  - QA Analyst](https://github.com/Aldaalmeida)
+1. **Acolhimento e Apresentação** *(você está aqui!)*  
+2. [Pré-requisitos](welcome/requisitos.md)  
+3. [Sobre a aplicação Bugbank](welcome/obugbank.md)  
+4. [Execução e Relatórios](welcome/execute.md)  
+5. [Testes divertidos que realizamos!](execute.md#index)
 
+---
 
-#
-Agora, por favor, vá para a seção [pré-requisitos](welcome/requisitos.md) para que possamos ter a melhor experiência possível. Se você já possui experiência com testes automatizados, pode ir diretamente para a nossa página de relatórios e execuções. Basta clicar [aqui](welcome/execute.md).
+## 🧭 Menu rápido
 
-
-
-Aqui há o índice completo das sessões que compõem esse projeto. Veja abaixo: 
-<a id="index"></a>
-
-1. [Acolhimento e apresentação](readme.md); (Você está aqui!) 
-2. [Pré-requisitos](welcome/requisitos.md);
-3. [Sobre a apicação que utilizamos, o Bugbank](welcome/obugbank.md);
-4. [Execução e demais relatórios](welcome/execute.md).
-
-#
- **Menu** |
-
-<p><a href="#index">Ir para o sumário</a></p>
-<p><a href="#top">Ir para o topo</a></p>
-___
-
+🔝 [Ir para o topo](#top)

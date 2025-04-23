@@ -1,61 +1,103 @@
-# Conhecendo a aplicação em teste, o Bugbank!
+# 🚀 Conhecendo a aplicação em teste: **Bugbank!**
 
-A aplicação se chama Bugbank - [**Bug Bank - O banco com bugs e falhas do seu jeito.**](https://github.com/jhonatasmatos/bugbank-ui) - e foi desenvolvida usando HTML, CSS e JavaScript.
+A aplicação se chama [**Bug Bank - O banco com bugs e falhas do seu jeito**](https://github.com/jhonatasmatos/bugbank-ui) e foi desenvolvida com **HTML**, **CSS** e **JavaScript**.
 
-## Funcionalidades da aplicação
+---
 
-A aplicação BugBank simula um banco on-line onde é possível realizar transferências, verificar saldo, extratos e etc. 
+## ✨ Funcionalidades principais
 
+A BugBank simula um banco online onde é possível realizar login, cadastrar contas, transferir valores e verificar extratos. A seguir, apresentamos os comportamentos esperados para cada funcionalidade.
 
-### Campos obrigatórios
+---
 
-```diff 
-Os seguintes campos são obrigatórios e devem ser preenchidos antes do envio do formulário:
+## 🔐 1. Login
 
-• E-mail (campo do tipo e-mail, com validação)
-• Nome (campo do tipo de texto)
-• Senha(campo do tipo de texto)
-• Confirmação de Senha (campo do tipo de texto, com validação)
-
-``` 
-### Outros campos
-```diff 
-Além dos campos obrigatórios, o “cliente” pode inserir:
-
-• Criar conta com saldo? (campo do tipo botão, opcional)
-``` 
-
-### Campos de dashboard
-```diff 
-• Transferência (campo do tipo botão)
-• Pagamentos (campo do tipo botão)
-• Extrato (campo do tipo botão)
-• Saque (campo do tipo botão)
-``` 
-### Campos da transferência
-```diff 
-• Na página de TRANSFERÊNCIA também há campos obrigatórios:
-
-• Número da conta (campo do tipo de texto)
-• Dígito identificador (campo do tipo de texto)
-• Valor (campo do tipo número)
+```diff
+• Email e Senha são campos obrigatórios.
+• Se não preencher os campos obrigatórios, deve exibir a mensagem:
+  "Usuário e senha precisam ser preenchidos".
+• Não deve permitir login de usuários inválidos ou não cadastrados.
+• Usuários válidos são redirecionados para a página inicial (home).
 ```
 
-###
+---
 
-> (🦆) Os campos **PAGAMENTOS e SAQUE** apresentam uma mensagem de **FUNCIONALIDADE EM DESENVOLVIMENTO** quando clicadas enquanto que o botão **EXTRATO** apresenta o saldo disponível. 
+## 📝 2. Cadastro
 
-###
-###
-###
+```diff
+• Nome, Email, Senha e Confirmação de senha são obrigatórios.
+• Mensagens esperadas em caso de ausência:
+    - Nome: "Nome não pode ser vazio"
+    - Email: "Email não pode ser vazio"
+    - Senha: "Senha não pode ser vazio"
+    - Confirmação: "Confirmar senha não pode ser vazio"
+• "Criar conta com saldo" ativo → saldo inicial de R$ 1.000,00
+• "Criar conta com saldo" inativo → saldo inicial de R$ 0,00
+• Senha e confirmação devem ser iguais.
+• Cadastro bem-sucedido deve exibir número da conta criada.
+```
 
-Vá para a [Execução e Relatórios](execute.md) para configurar o projeto de testes.
+---
 
-# 
+## 💸 3. Transferência
 
-Aqui há o índice completo das sessões que compõem esse projeto. Veja abaixo: 
+```diff
+• Apenas contas válidas podem receber transferências.
+• Saldo deve ser ≥ ao valor da transferência.
+• Conta inválida → "Conta inválida ou inexistente".
+• Número da conta e dígito aceitam apenas números.
+• Campo "descrição" é obrigatório.
+• Valor deve ser maior que zero.
+• Transferência com sucesso:
+    - Valor é debitado da conta
+    - Mensagem: "Transferência realizada com sucesso"
+    - Redireciona para o extrato
+```
 
-1. [Acolhimento e apresentação](readme.md); 
-2. [Pré-requisitos](welcome/requisitos.md); 
-3. [Sobre a apicação que utilizamos, o Bugbank](welcome/obugbank.md); (Você está aqui!) 
-4. [Execução e demais relatórios](welcome/execute.md).
+---
+
+## 💳 4. Pagamento
+
+```diff
+• Funcionalidade em desenvolvimento.
+```
+
+---
+
+## 📄 5. Extrato
+
+```diff
+• Exibe o saldo disponível atual.
+• Cada transação exibe:
+    - Data
+    - Tipo (Abertura de conta / Transferência enviada / recebida)
+• Valor de saída:
+    - Vermelho e com sinal de menos (–)
+• Valor de entrada:
+    - Verde
+• Transações sem descrição exibem (–)
+```
+
+---
+
+## 🏧 6. Saque
+
+```diff
+• Funcionalidade em desenvolvimento.
+```
+
+---
+
+## ⏭️ Próximo passo
+
+➡️ Vá para a [**Execução e Relatórios**](execute.md) para configurar e executar seus testes na aplicação.
+
+---
+
+## 🗂️ Sumário do projeto
+
+1. [Acolhimento e apresentação](../readme.md)  
+2. [Pré-requisitos](requisitos.md)  
+3. **Sobre a aplicação que utilizamos, o Bugbank** (Você está aqui!)  
+4. [Execução e demais relatórios](execute.md)  
+5. [Clique aqui para verificar demais testes que nos divertimos bastante realizando!](execute.md#index)

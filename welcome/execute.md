@@ -14,6 +14,7 @@ Relatório de testes apresentado ao Bootcamp de Quality Assurance do Instituto A
 
 <h1></h1>
 
+<p><a href="#bot">Ir para o final da página</a></p>
 
 #### 🦆 Como executar o projeto:
 
@@ -23,7 +24,6 @@ git clone https://github.com/acerbityroque/BugBankBCIA.git
 cd BugBankBCIA
 npm install
 npm run cy:open
-
 ```
 #### 🦆 Faça um commit! 
 ```diff 
@@ -37,6 +37,10 @@ git push origin main
 ---
 
 <a id="index"></a>
+<pre style="text-align: justify;">
+  Queridos/as professores, o sumário abaixo integra várias bases de estudos que realizamos enquanto estávamos brincando na aplicação, mas que, por conta do tempo, não sabíamos como colocá-los no documento original do Plano de Testes. Espero que entendam e aproveitem o nosso aprendizado contínuo!
+</pre>
+
 
 ## Sumário
 
@@ -910,15 +914,18 @@ Site utilizado: https://bugbank.netlify.app/
 <h1>
 
 #
+<a id="bot"></a>
 
 Aqui há o índice completo das sessões que compõem esse projeto. Veja abaixo: 
 
-1. [Acolhimento e apresentação](readme.md); 
-2. [Pré-requisitos](welcome/requisitos.md); 
-3. [Sobre a apicação que utilizamos, o Bugbank](welcome/obugbank.md); 
-4. [Execução e demais relatórios](welcome/execute.md) (Você está aqui!) 
+1. [Acolhimento e apresentação](../readme.md);
+2. [Pré-requisitos](requisitos.md); 
+3. [Sobre a aplicação que utilizamos, o Bugbank](obugbank.md); 
+4. [Execução e demais relatórios](execute.md).
+5. **Clique aqui para verificar demais testes que nos divertimos bastante realizando!** (Você está aqui!)
 
 #
  **Menu** |
 <p><a href="#index">Ir para o sumário</a></p>
 <p><a href="#top">Ir para o topo</a></p>
+
