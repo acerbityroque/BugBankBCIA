@@ -37,9 +37,10 @@ git push origin main
 ---
 
 <a id="index"></a>
-<pre style="text-align: justify;">
+<div style="text-align: justify; border: 1px solid #ccc; background-color: #f9f9f9; padding: 16px; border-radius: 8px; font-size: 16px;">
   Queridos/as professores, o sumário abaixo integra várias bases de estudos que realizamos enquanto estávamos brincando na aplicação, mas que, por conta do tempo, não sabíamos como colocá-los no documento original do Plano de Testes. Espero que entendam e aproveitem o nosso aprendizado contínuo!
-</pre>
+</div>
+
 
 
 ## Sumário

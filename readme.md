@@ -39,7 +39,7 @@ Pode ir direto para a parte de [**Execução e Relatórios**](welcome/execute.md
 2. [Pré-requisitos](welcome/requisitos.md)  
 3. [Sobre a aplicação Bugbank](welcome/obugbank.md)  
 4. [Execução e Relatórios](welcome/execute.md)  
-5. [Testes divertidos que realizamos!](execute.md#index)
+5. [Testes divertidos que realizamos!](welcome/execute.md#index)
 
 ---
 
