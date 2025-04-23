@@ -1,28 +1,27 @@
 it('Registro - CT001, CT002 (Dados válidos + E-mail duplicado)', () => {
-    cy.visit('https://bugbank.netlify.app/');
-    cy.get('button.style__ContainerButton-sc-1wsixal-0.ihdmxA').click({ force: true });
+    // ✅ Visita a página inicial
+    cy.pagina();
 
-    // Cadastro inicial válido
-    cy.get(':nth-child(2) > .input__default').type('pablo@gmail.com', { force: true, delay: 100 });
-    cy.get('.input__default').eq(3).type('Pablo', { force: true, delay: 100 });
-    cy.get('.input__default').eq(4).type('123456', { force: true, delay: 100 });
-    cy.get('.input__default').eq(5).type('123456', { force: true, delay: 100 });
-    cy.get('#toggleAddBalance').click({ force: true }); // Criar conta com saldo
-    cy.get('button.style__ContainerButton-sc-1wsixal-0.CMabB').click({ force: true });
-    cy.wait(3000);
-    cy.get('#btnCloseModal').click({ force: true }); // Fechar modal
+    // ✅ Realiza o registro de conta com saldo
+    cy.registrar();
+    cy.registroEmail('pablo@gmail.com');
+    cy.registroNome('Pablo');
+    cy.registroSenha('123456');
+    cy.registroConfirmarSenha('123456');
+    cy.registroCriarSaldo();
+    cy.registroCadastrar();
+    cy.fecharModal();
 
-    // Tentativa de criar uma nova conta com o mesmo e-mail
-    cy.visit('https://bugbank.netlify.app/');
-    cy.get('button.style__ContainerButton-sc-1wsixal-0.ihdmxA').click({ force: true });
+    // ✅ Tenta registrar uma nova conta com o mesmo e-mail
+    cy.pagina();
+    cy.registrar();
+    cy.registroEmail('pablo@gmail.com'); // Mesmo e-mail
+    cy.registroNome('Outro Nome');
+    cy.registroSenha('654321');
+    cy.registroConfirmarSenha('654321');
+    cy.registroCadastrar();
 
-    cy.get(':nth-child(2) > .input__default').type('pablo@gmail.com', { force: true, delay: 100 });
-    cy.get('.input__default').eq(3).type('Outro Nome', { force: true, delay: 100 });
-    cy.get('.input__default').eq(4).type('654321', { force: true, delay: 100 });
-    cy.get('.input__default').eq(5).type('654321', { force: true, delay: 100 });
-    cy.get('button.style__ContainerButton-sc-1wsixal-0.CMabB').click({ force: true });
-
-    // Validação condicional
-    cy.get('#btnCloseModal').click({ force: true });
+    // ✅ Validação condicional: Fecha o modal
+    cy.fecharModal();
     cy.log('Teste passou: A mensagem de erro não apareceu, mas o modal foi fechado.');
 });

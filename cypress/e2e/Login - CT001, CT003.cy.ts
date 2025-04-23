@@ -1,21 +1,27 @@
-const credencials = {
-    nome: 'Maria João',
-    email: 'pablo@gmail.com',
-    senha: '123456'
-};
+describe('Registro, Login e Logout', () => {
+    it('CT001, CT003 - Fluxo Completo', () => {
+        // Visita a página inicial
+        cy.pagina();
 
-it('Login - CT001, 003', () => {
-        // 
-        cy.visit('https://bugbank.netlify.app/');
-        cy.get('button.style__ContainerButton-sc-1wsixal-0.ihdmxA').click({ force: true });
-        cy.get(':nth-child(2) > .input__default').type(credencials.email, { force: true, delay: 100 });
-        cy.get('.input__default').eq(3).type(credencials.nome, { force: true, delay: 100 });
-        cy.get('.input__default').eq(4).type(credencials.senha, { force: true, delay: 100 });
-        cy.get('.input__default').eq(5).type(credencials.senha, { force: true, delay: 100 });
-        cy.get('button.style__ContainerButton-sc-1wsixal-0.CMabB').click({ force: true });
-        cy.get('#toggleAddBalance').click({ force: true });
-        cy.wait(3000);
-        cy.get('.style__ContainerFormLogin-sc-1wbjw6k-0 > :nth-child(1) > .input__default').type(credencials.email, { force: true, delay: 100 });
-        cy.get('.style__ContainerFormLogin-sc-1wbjw6k-0 > .login__password > .style__ContainerFieldInput-sc-s3e9ea-0 > .input__default').type(credencials.senha, { force: true, delay: 100 });
-        cy.get('.otUnI').click({ force: true });
+        // Realiza o registro de conta
+        cy.registrar();
+        cy.registroNome();
+        cy.registroEmail();
+        cy.registroSenha();
+        cy.registroConfirmarSenha();
+        cy.registroCriarSaldo();
+        cy.registroCadastrar();
+        cy.fecharModal();
+
+        // ✅ Visita novamente a página inicial antes do login
+        cy.pagina();
+
+        // ✅ Realiza login com os dados registrados
+        cy.loginEmail();
+        cy.loginSenha();
+        cy.loginAcessar();
+
+        // ✅ Realiza logout
+        cy.logout();
     });
+});

@@ -1,5 +1,6 @@
 <img src="https://i.imgur.com/yhbiq8n.jpeg" alt="QaQaQAssurance" style="height: 300px; width:100%;"/>
 
+<a id="top"></a>
 
 <h2 align="left"> 🌲 Bugbank do Zero a nota máxima no Bootcamp! 🦆
 </h2>
@@ -7,7 +8,6 @@
 👋 Queridos professores, sejam bem-vindos(as)!
 
 É muito bom tê-los(as) aqui. Tenho certeza que vocês ficarão encantandos com os nossos testes, com nosso time e também com o nosso pato! ❤️
-
 
 
 
@@ -37,12 +37,17 @@ Agora, por favor, vá para a seção [pré-requisitos](welcome/requisitos.md) pa
 
 
 Aqui há o índice completo das sessões que compõem esse projeto. Veja abaixo: 
+<a id="index"></a>
 
 1. [Acolhimento e apresentação](readme.md); (Você está aqui!) 
 2. [Pré-requisitos](welcome/requisitos.md);
 3. [Sobre a apicação que utilizamos, o Bugbank](welcome/obugbank.md);
 4. [Execução e demais relatórios](welcome/execute.md).
 
+#
+ **Menu** |
 
+<p><a href="#index">Ir para o sumário</a></p>
+<p><a href="#top">Ir para o topo</a></p>
 ___
 
