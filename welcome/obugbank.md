@@ -94,10 +94,16 @@ A BugBank simula um banco online onde é possível realizar login, cadastrar con
 
 ---
 
-## 🗂️ Sumário do projeto
+## 🗂️ Índice do Projeto
 
-1. [Acolhimento e apresentação](../readme.md)  
+1. [Acolhimento e apresentação](../readme.md);
 2. [Pré-requisitos](requisitos.md)  
-3. **Sobre a aplicação que utilizamos, o Bugbank** (Você está aqui!)  
-4. [Execução e demais relatórios](execute.md)  
-5. [Clique aqui para verificar demais testes que nos divertimos bastante realizando!](execute.md#index)
+3. **Sobre a aplicação Bugbank**  *(Você está aqui!)* 
+4. [Execução e Relatórios](execute.md)  
+5. [Testes divertidos que realizamos!](execute.md#index)
+
+---
+
+## 🧭 Menu rápido
+
+🔝 [Ir para o topo](#top)

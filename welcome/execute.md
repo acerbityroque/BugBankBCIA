@@ -916,16 +916,16 @@ Site utilizado: https://bugbank.netlify.app/
 #
 <a id="bot"></a>
 
-Aqui há o índice completo das sessões que compõem esse projeto. Veja abaixo: 
+## 🗂️ Índice do Projeto
 
 1. [Acolhimento e apresentação](../readme.md);
-2. [Pré-requisitos](requisitos.md); 
-3. [Sobre a aplicação que utilizamos, o Bugbank](obugbank.md); 
-4. [Execução e demais relatórios](execute.md).
-5. **Clique aqui para verificar demais testes que nos divertimos bastante realizando!** (Você está aqui!)
+2. [Pré-requisitos](requisitos.md)  
+3. [Sobre a aplicação Bugbank](obugbank.md)  
+4. **Execução e Relatórios** *(Você está aqui!)*  
+5. **Testes divertidos que realizamos!** *(E aqui também! 😊)* 
 
-#
- **Menu** |
-<p><a href="#index">Ir para o sumário</a></p>
-<p><a href="#top">Ir para o topo</a></p>
+---
 
+## 🧭 Menu rápido
+
+🔝 [Ir para o topo](#top)
