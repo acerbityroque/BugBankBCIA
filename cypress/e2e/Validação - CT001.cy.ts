@@ -1,18 +1,29 @@
 it('Validação - CT001 (Tentativa de registro com e-mail inválido)', () => {
-    cy.visit('https://bugbank.netlify.app/');
-    cy.get('button.style__ContainerButton-sc-1wsixal-0.ihdmxA').click({ force: true });
+    cy.pagina(); // Visita a página inicial
 
-    // Preenchendo os campos com um e-mail inválido (sem @)
-    cy.get(':nth-child(2) > .input__default').type('emailinvalido.com', { force: true, delay: 100 });
-    cy.get('.input__default').eq(3).type('Teste Usuario', { force: true, delay: 100 });
-    cy.get('.input__default').eq(4).type('123456', { force: true, delay: 100 });
-    cy.get('.input__default').eq(5).type('123456', { force: true, delay: 100 });
-    cy.get('button.style__ContainerButton-sc-1wsixal-0.CMabB').click({ force: true });
+    cy.registrar(); // Clica no botão para registrar
 
-    // Verifica se a mensagem de erro específica para e-mail inválido aparece
+    // Preenchendo o campo de e-mail com um e-mail inválido (sem @)
+    cy.get(':nth-child(2) > .input__default')
+        .should('exist')
+        .type('emailinvalido.com', { force: true, delay: 100 });
+
+    // Preenche o nome utilizando o Faker
+    cy.registroNome(); // Nome gerado pelo Faker
+
+    // Preenche a senha utilizando o Faker
+    cy.registroSenha(); // Senha definida (no caso, 12345678)
+
+    // Confirma a senha
+    cy.registroConfirmarSenha(); // Confirma a senha com o mesmo valor
+
+    // Finaliza o registro
+    cy.registroCadastrar(); // Clica no botão para cadastrar
+
+    // Verifica se a mensagem de erro aparece indicando um e-mail inválido
     cy.get('p.input__warging')
         .should('exist')
-        .and('contain', 'Formato inválido');
-    
+        .and('contain', 'Formato inválido'); // Verifica a mensagem de erro
+
     cy.log('Teste passou: Mensagem de erro exibida corretamente para e-mail inválido.');
 });
