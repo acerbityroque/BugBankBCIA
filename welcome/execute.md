@@ -1,10 +1,11 @@
 <a id="top"></a>
+#
 <h1 align="center">
-Estudo de Cypress no site Bug Bank com Page Objects
-</h1>
-<h4 align="right">
 
-Relatório de testes apresentado ao Bootcamp de Quality Assurance do Instituto Atlântico como requisito parcial para obtenção do certificado de conclusão
+</h1>
+<h4 align="center">
+
+Relatório de testes apresentado ao Bootcamp de Quality Assurance do Instituto Atlântico como requisito parcial para obtenção do certificado de conclusão.
 
 </h4>
 
@@ -22,15 +23,17 @@ Relatório de testes apresentado ao Bootcamp de Quality Assurance do Instituto A
 ```diff 
 git clone https://github.com/acerbityroque/BugBankBCIA.git
 cd BugBankBCIA
-npm install
 npm run cy:open
 ```
-#### 🦆 Faça um commit! 
+#### 🦆 Aceitem nosso convite e façam um commit para os patinhos! 
 ```diff 
 git add .
 git commit -m "Teste dos professores"
 git push origin main
 ```
+<div align="center">
+<img width="800px" alt="Site para testes automatizados Bugbank" src="https://i.imgur.com/mQGdNNG.png" />
+</div>
 
 #### 🦆 Cenários de login usados para realização dos testes:
 
@@ -898,7 +901,7 @@ git push origin main
 
 
 
-#### Relatórios gerados:
+#### Relatórios gerados pelo Cypress e Cypress Cloud:
 
 <div align="center">
 <img width="800px" alt="Relatório gerado Bugbank" src="https://i.imgur.com/rUkjWsc.png" />

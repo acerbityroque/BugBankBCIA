@@ -14,12 +14,14 @@ Antes de iniciar, verifique se os seguintes sistemas estão devidamente instalad
 
 ## 📋 Como instalar?
 
-Aqui está o comando para instalar as bibliotecas necessárias via terminal. 👇
+Aqui está o comando para instalar a biblioteca Faker necessária via terminal. 👇
 
 ```bash
 npm install @faker-js/faker --save-dev
 ```
 <blockquote style="text-align: justify;"> <strong>Obs. 1:</strong> Para verificar as versões do git, Node.js e npm instaladas em seu computador, execute o comando <code>git --version && node --version && npm --version</code> no terminal. </blockquote>
+
+<blockquote style="text-align: justify;"> <strong>Obs. 2:</strong> Para instalar os demais softwares, basta clicar nos links disponíveis acima, eles te levarão diretamente para a página respectiva de cada um deles.  </blockquote>
 
 ### <h2> 💡 Tudo pronto? </h>
 <blockquote style="border: 2px solid #ccc; padding: 20px; background-color: #f9f9f9; text-align: center;"> <p style="font-size: 18px; font-weight: bold; color: #333;"> Ótimo! Seus pré-requisitos estão prontos! ☑️ </p> <p> Agora, clique <a href="obugbank.md" style="color: #007bff; font-weight: bold;">aqui</a> para conhecer a aplicação sobre a qual realizamos os nossos testes. Vamos nessa! </p> </blockquote>
